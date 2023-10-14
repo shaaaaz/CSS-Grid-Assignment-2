@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto:wght@300&family=Signika:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.img{
+    width: 400px;
+    height: 225px;
+}
+
+.my-grid{
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 85px 250px 250px 250px;
+    grid-template-areas: 
+        "header header header"
+        ". . ."
+        ". . ."
+        ". . .";
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(208, 189, 237);
+}
+
+.heading{
+    grid-area: header;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.img{
+    align-self: center;
+    justify-self: center;
+}
